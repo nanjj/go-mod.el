@@ -14,6 +14,26 @@
 ;;
 ;;; Code:
 
+(defun go-mod-tidy()
+  "Run go mod tidy"
+  (interactive)
+  (shell-command "go mod tidy -v"))
+
+(defun go-mod-graph()
+  "Run go mod graph"
+  (interactive)
+  (shell-command "go mod graph"))
+
+(defun go-mod-init()
+  "Run go mod init"
+  (interactive)
+  (shell-command "go mod init"))
+
+(defun go-mod-verify()
+  "Run go mod verify"
+  (interactive)
+  (shell-command "go mod verify"))
+
 (defconst vgo-mode-syntax-table
   (-let [table
          (copy-syntax-table prog-mode-syntax-table)]
