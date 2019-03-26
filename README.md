@@ -1,1 +1,1 @@
-# go-mod.el
+# vgo mode for go.mod and go.sum
