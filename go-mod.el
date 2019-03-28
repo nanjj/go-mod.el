@@ -34,6 +34,7 @@
   (interactive)
   (shell-command "go mod verify"))
 
+;;;###autoload
 (defconst go-mod-mode-syntax-table
   (-let [table
          (copy-syntax-table prog-mode-syntax-table)]
@@ -42,6 +43,7 @@
     table)
   "go mod mode syntax table.")
 
+;;;###autoload
 (setq go-mod-mode-highlights
       '(("^\\(module\\) " . font-lock-type-face)
         ("^\\(require\\)" . font-lock-function-name-face)
@@ -58,6 +60,7 @@
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("go\\.mod\\'" . go-mod-mode))
+;;;###autoload
 (add-to-list 'auto-mode-alist '("go\\.sum\\'" . go-mod-mode))
 
 ;; add the mode to the `features' list
