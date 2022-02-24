@@ -65,7 +65,7 @@
 (add-to-list 'auto-mode-alist '("go\\.sum\\'" . go-mod-mode))
 
 ;; add the mode to the `features' list
-(provide 'go-mod-mode)
+(provide 'go-mod)
 
 ;; Local Variables:
 ;; coding: utf-8
